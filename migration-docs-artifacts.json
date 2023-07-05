@@ -1,0 +1,81 @@
+{
+  "product": [
+    {
+    "product": "APIM",
+
+    "source": "3.1.0",
+    "target": "4.1.0",
+
+    "migration-resources": [{
+      "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.160.zip",
+      "target-folder": "attachments"
+    },
+      {
+        "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-310-to-410.md",
+        "target-folder": "migration-documents/api-manager"
+      },
+      {
+        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410",
+        "target-folder": "db-scripts"
+      }
+    ],
+
+    "dependency-products": [{
+      "product": "",
+
+      "source": "3.1.0",
+      "target": "4.1.0",
+
+      "migration-resources": [{
+        "source-path": "",
+        "target-folder": ""
+      },
+        {
+          "source-path": "",
+          "target-folder": ""
+        }
+      ]
+
+    }]
+  },
+    {
+      "product": "APIM",
+
+      "source": "3.2.0",
+      "target": "4.1.0",
+
+      "migration-resources": [{
+        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.160.zip",
+        "target-folder": "attachments"
+      },
+        {
+          "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-310-to-410.md",
+          "target-folder": "migration-documents/api-manager"
+        },
+        {
+          "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410",
+          "target-folder": "db-scripts"
+        }
+      ],
+
+      "dependency-products": [{
+        "product": "iskm",
+
+        "source": "3.2.0",
+        "target": "4.1.0",
+
+        "migration-resources": [{
+          "source-path": "",
+          "target-folder": ""
+        },
+          {
+            "source-path": "",
+            "target-folder": ""
+          }
+        ]
+
+      }
+      ]
+    }
+  ]
+}
