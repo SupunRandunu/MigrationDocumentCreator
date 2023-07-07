@@ -1,6 +1,6 @@
 git:
   username:
-  token: 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
+  token:
   repository: https://github.com/wso2-enterprise/migration-docs
   directory: migration-docs
   organization: wso2-enterprise
