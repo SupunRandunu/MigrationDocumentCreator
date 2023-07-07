@@ -96,4 +96,15 @@ public class Product {
         this.additionalProperties.put(name, value);
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "product='" + product + '\'' +
+                ", source='" + source + '\'' +
+                ", target='" + target + '\'' +
+                ", migrationResources=" + migrationResources +
+                ", dependencyProducts=" + dependencyProducts +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

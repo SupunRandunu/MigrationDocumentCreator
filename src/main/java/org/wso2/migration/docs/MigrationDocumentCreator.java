@@ -25,7 +25,6 @@ public class MigrationDocumentCreator {
         logger.info("........................................................");
         logger.info("...........Starting Migration Document Creator..........");
         logger.info("........................................................");
-
         logger.info("........................................................");
 
         YAMLConfig yamlConfig =new YAMLConfigReader().readYAMLConfig();
@@ -54,40 +53,57 @@ public class MigrationDocumentCreator {
         }
 
 
-        try {
+        try (FileReader fileReader = new FileReader(Constants.migrationArtifactsJson)) {
             JSONParser jsonParser = new JSONParser();
-            String migrationArtifact=jsonParser.parse(new FileReader(Constants.migrationArtifactsJson)).toString();
+            String migrationArtifact = jsonParser.parse(fileReader).toString();
             JSONObject jsonObject = new JSONObject(migrationArtifact);
             ObjectMapper objectMapper = new ObjectMapper();
             MigrationDocuments migrationDocuments= objectMapper.readValue( jsonObject.toString(), MigrationDocuments.class);
 
 
-            String basePath = yamlConfig.getProduct()+"-"+yamlConfig.getSource()+"-"+yamlConfig.getTarget()+"-"+"Migration";
-
-            for (Product product : migrationDocuments.getProduct()){
+            StringBuilder basePathBuilder = new StringBuilder();
+            basePathBuilder.append(yamlConfig.getProduct())
+                    .append("-").append(yamlConfig.getSource())
+                    .append("-").append(yamlConfig.getTarget())
+                    .append("-").append("Migration");
+            String basePath = basePathBuilder.toString();
+            boolean isProductFound= false;
+            for (Product product : migrationDocuments.getProducts()){
 
                 if(product.getProduct().equals(yamlConfig.getProduct())
                         && product.getSource().equals(yamlConfig.getSource())
                         && product.getTarget().equals(yamlConfig.getTarget())){
-                    for(MigrationResource migrationResource: product.getMigrationResources()){
-                        new DirectoryManagementUtil().createDirectories(basePath,migrationResource.getTargetFolder());
-                        new FileManagementUtil().copyFile(basePath,migrationResource.getSourcePath(),migrationResource.getTargetFolder());
-                    }
-                    for(DependencyProduct dependencyProduct: product.getDependencyProducts()){
-                        if(!dependencyProduct.getProduct().equals("")){
-                            for (MigrationResource migrationResource:dependencyProduct.getMigrationResources()){
-                                new DirectoryManagementUtil().createDirectories(basePath,migrationResource.getTargetFolder());
-                                new FileManagementUtil().copyFile(basePath,migrationResource.getSourcePath(),migrationResource.getTargetFolder());
+                    //logger.info(product.toString());
+
+                    if(yamlConfig.getDependency()==null){
+                        for(MigrationResource migrationResource: product.getMigrationResources()){
+                            new DirectoryManagementUtil().createDirectories(basePath,migrationResource.getTargetFolder());
+                            new FileManagementUtil().copyFile(basePath,migrationResource.getSourcePath(),migrationResource.getTargetFolder());
+                        }
+                    }else {
+                        for(MigrationResource migrationResource: product.getMigrationResources()){
+                            new DirectoryManagementUtil().createDirectories(basePath,migrationResource.getTargetFolder());
+                            new FileManagementUtil().copyFile(basePath,migrationResource.getSourcePath(),migrationResource.getTargetFolder());
+                        }
+                        for(DependencyProduct dependencyProduct: product.getDependencyProducts()){
+                            if(!dependencyProduct.getProduct().equals("")){
+                                for (MigrationResource migrationResource:dependencyProduct.getMigrationResources()){
+                                    new DirectoryManagementUtil().createDirectories(basePath,migrationResource.getTargetFolder());
+                                    new FileManagementUtil().copyFile(basePath,migrationResource.getSourcePath(),migrationResource.getTargetFolder());
+                                }
                             }
                         }
                     }
+                    isProductFound= true;
                     directoryManagementUtil.zipDirectory(basePath);
                     directoryManagementUtil.deleteDirectory(basePath);
                 }
-
+            }
+            if(!isProductFound){
+                logger.info("Unable to find the provided product versions");
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Error occurred while creating Migration Document " + e);
         }
         logger.info("........................................................");
         logger.info("........................................................");

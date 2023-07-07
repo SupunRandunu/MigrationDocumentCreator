@@ -1,5 +1,8 @@
 package org.wso2.migration.docs;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,15 +13,19 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class FileManagementUtil {
+
+    private static final Logger logger = LogManager.getLogger(FileManagementUtil.class);
     public void copyFile(String basePath, String sourcePath, String destinationPath){
+        Path source = new File(sourcePath).toPath();
         try {
-            Path source = new File(sourcePath).toPath();
-            Path destination = new File(basePath+"/"+destinationPath+"/"+source.getFileName()).toPath();
+
+            Path destination = new File("./"+basePath+"/"+destinationPath+"/"+source.getFileName()).toPath();
             Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
 
-            System.out.println("File copied successfully.");
+            logger.info("File "+source.getFileName()+" copied to the path "+destination+" successfully");
         } catch (IOException e) {
-            System.out.println("An error occurred while copying the file: " + e.getMessage());
+
+            logger.error("An error occurred while copying the file: "+source.getFileName()+" " + e);
         }
     }
 
@@ -49,5 +56,6 @@ public class FileManagementUtil {
             zipOut.write(bytes, 0, length);
         }
         fis.close();
+        logger.info("Zipped the migration document : "+fileName +" successfully");
     }
 }

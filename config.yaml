@@ -4,8 +4,8 @@ git:
   repository: https://github.com/wso2-enterprise/migration-docs
   directory: migration-docs
   organization: wso2-enterprise
-wso2:
+doc:
   product: APIM
-  source: 3.2.0
+  source: 3.1.0
   target: 4.1.0
-  dependency:
+  dependency: isaskm

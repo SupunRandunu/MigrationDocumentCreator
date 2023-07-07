@@ -1,8 +1,9 @@
 package org.wso2.migration.docs.config;
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.wso2.migration.docs.DirectoryManagementUtil;
+import org.wso2.migration.docs.GitManagementUtil;
 import org.wso2.migration.docs.util.Constants;
 import org.yaml.snakeyaml.Yaml;
 
@@ -11,7 +12,7 @@ import java.io.FileNotFoundException;
 import java.util.Map;
 
 public class YAMLConfigReader {
-    private static final Logger logger = LogManager.getLogger(YAMLConfigReader.class);
+    private static final Logger logger = LogManager.getLogger(GitManagementUtil.class);
     public YAMLConfig readYAMLConfig(){
         try {
 
@@ -31,7 +32,7 @@ public class YAMLConfigReader {
             yamlConfig.setOrganization( (String) git.get("organization"));
 
 
-            Map<String, Object> wso2 = (Map<String, Object>) config.get("wso2");
+            Map<String, Object> wso2 = (Map<String, Object>) config.get("doc");
 
             yamlConfig.setSource( (String) wso2.get("source"));
             yamlConfig.setTarget( (String) wso2.get("target"));
@@ -39,6 +40,7 @@ public class YAMLConfigReader {
             yamlConfig.setDependency( (String) wso2.get("dependency"));
 
             logger.info("Read the configurations from the config.yaml successfully.");
+            logger.info(yamlConfig.toString());
 
             return yamlConfig;
         } catch (FileNotFoundException e) {

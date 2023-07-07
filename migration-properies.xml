@@ -34,7 +34,7 @@
 			</package>
 		<package>
 			<target>4.1.0</target>
-			<source>3.2.0</source>
+			<source>3.1.0</source>
 			<apim>
 				<apim-attachments>
 					<is-resource>./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.160.zip</is-resource>

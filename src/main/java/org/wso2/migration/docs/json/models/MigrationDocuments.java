@@ -14,24 +14,24 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "product"
+        "products"
 })
 @Generated("jsonschema2pojo")
 public class MigrationDocuments {
 
-    @JsonProperty("product")
-    private List<Product> product;
+    @JsonProperty("products")
+    private List<Product> products;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
     @JsonProperty("product")
-    public List<Product> getProduct() {
-        return product;
+    public List<Product> getProducts() {
+        return products;
     }
 
     @JsonProperty("product")
-    public void setProduct(List<Product> product) {
-        this.product = product;
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 
     @JsonAnyGetter
