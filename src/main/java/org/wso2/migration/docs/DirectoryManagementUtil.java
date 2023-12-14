@@ -4,10 +4,9 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Path;
+import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -25,10 +24,10 @@ public class DirectoryManagementUtil {
             }
         } else {
             logger.info("Directory path already exists:: " + path);
-
         }
 
     }
+
     public void deleteDirectory(String directoryName) throws IOException {
         File file = new File(String.valueOf(directoryName));
         if (file.exists()) {

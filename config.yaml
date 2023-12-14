@@ -1,11 +1,28 @@
 git:
+  enable: false
   username:
   token:
   repository: https://github.com/wso2-enterprise/migration-docs
   directory: migration-docs
   organization: wso2-enterprise
 doc:
-  product: APIM
-  source: 3.1.0
-  target: 4.1.0
-  dependency: isaskm
+  product:
+  source:
+  target:
+  dependency: 
+  attachmentPrefixes : ['wso2is-migration-', 'wso2am-migration-', 'wso2is-extensions-', 'org.wso2.carbon.apimgt.migrate.client-']
+
+#Sample configuration
+#git:
+#  enable: false
+#  username:<username>
+#  token:<token>
+#  repository: https://github.com/wso2-enterprise/migration-docs
+#  directory: migration-docs
+#  organization: wso2-enterprise
+#doc:
+#  product: APIM
+#  source: 3.1.0
+#  target: 4.1.0
+#  dependency: isaskm
+#  attachmentPrefixes : ['wso2is-migration-', 'wso2am-migration-', 'wso2is-extensions-', 'org.wso2.carbon.apimgt.migrate.client-']

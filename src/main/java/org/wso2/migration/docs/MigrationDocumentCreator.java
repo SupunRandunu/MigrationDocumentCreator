@@ -2,6 +2,7 @@ package org.wso2.migration.docs;
 
 import java.io.File;
 import java.io.FileReader;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
@@ -35,23 +36,23 @@ public class MigrationDocumentCreator {
 
         GitManagementUtil gitManagementUtil = new GitManagementUtil();
         DirectoryManagementUtil directoryManagementUtil = new DirectoryManagementUtil();
-
-        if(new File(String.valueOf("./"+yamlConfig.getDirectory())).exists()){
-            if(!gitManagementUtil.getLastLocalCommitID(yamlConfig.getDirectory())
-                    .equals(gitManagementUtil.
-                            getLastRemoteCommitID(
-                                    yamlConfig.getOrganization(),
-                                    yamlConfig.getDirectory(),
-                                    yamlConfig.getToken()))){
-                directoryManagementUtil.deleteDirectory("./"+yamlConfig.getDirectory());
+        if ( yamlConfig.getEnable()==true) {
+            if (new File(String.valueOf("./" + yamlConfig.getDirectory())).exists()) {
+                if (!gitManagementUtil.getLastLocalCommitID(yamlConfig.getDirectory())
+                        .equals(gitManagementUtil.
+                                getLastRemoteCommitID(
+                                        yamlConfig.getOrganization(),
+                                        yamlConfig.getDirectory(),
+                                        yamlConfig.getToken()))) {
+                    directoryManagementUtil.deleteDirectory("./" + yamlConfig.getDirectory());
+                    gitManagementUtil
+                            .downloadMigrationRepo(yamlConfig.getRepository(), yamlConfig.getDirectory(), yamlConfig.getToken());
+                }
+            } else {
                 gitManagementUtil
-                        .downloadMigrationRepo(yamlConfig.getRepository(),yamlConfig.getDirectory(),yamlConfig.getToken());
+                        .downloadMigrationRepo(yamlConfig.getRepository(), yamlConfig.getDirectory(), yamlConfig.getToken());
             }
-        } else {
-            gitManagementUtil
-                    .downloadMigrationRepo(yamlConfig.getRepository(),yamlConfig.getDirectory(),yamlConfig.getToken());
         }
-
 
         try (FileReader fileReader = new FileReader(Constants.migrationArtifactsJson)) {
             JSONParser jsonParser = new JSONParser();

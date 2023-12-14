@@ -9,6 +9,7 @@ import org.yaml.snakeyaml.Yaml;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.List;
 import java.util.Map;
 
 public class YAMLConfigReader {
@@ -16,11 +17,11 @@ public class YAMLConfigReader {
     public YAMLConfig readYAMLConfig(){
         try {
 
-            FileInputStream fis = new FileInputStream(Constants.configFile);
+            FileInputStream configYAML = new FileInputStream(Constants.configFile);
 
             Yaml yaml = new Yaml();
 
-            Map<String, Object> config = yaml.load(fis);
+            Map<String, Object> config = yaml.load(configYAML);
 
             YAMLConfig yamlConfig = new YAMLConfig();
 
@@ -30,14 +31,17 @@ public class YAMLConfigReader {
             yamlConfig.setRepository( (String) git.get("repository"));
             yamlConfig.setDirectory( (String) git.get("directory"));
             yamlConfig.setOrganization( (String) git.get("organization"));
+            yamlConfig.setEnable((Boolean) git.get("enable"));
 
 
-            Map<String, Object> wso2 = (Map<String, Object>) config.get("doc");
 
-            yamlConfig.setSource( (String) wso2.get("source"));
-            yamlConfig.setTarget( (String) wso2.get("target"));
-            yamlConfig.setProduct( (String) wso2.get("product"));
-            yamlConfig.setDependency( (String) wso2.get("dependency"));
+            Map<String, Object> doc = (Map<String, Object>) config.get("doc");
+
+            yamlConfig.setSource( (String) doc.get("source"));
+            yamlConfig.setTarget( (String) doc.get("target"));
+            yamlConfig.setProduct( (String) doc.get("product"));
+            yamlConfig.setDependency( (String) doc.get("dependency"));
+            yamlConfig.setAttachmentPrefixes((List<String>) doc.get("attachmentPrefixes"));
 
             logger.info("Read the configurations from the config.yaml successfully.");
             logger.info(yamlConfig.toString());

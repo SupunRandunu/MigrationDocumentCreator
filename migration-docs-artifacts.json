@@ -1,206 +1,1182 @@
 {
-  "products": [
-    {
-    "product": "APIM",
-
-    "source": "3.1.0",
-    "target": "4.1.0",
-
-    "migration-resources": [
+   "products":[
       {
-        "source-path": "./migration-docs/about-migration-docs.md",
-        "target-folder": ""
+         "product":"APIM",
+         "source":"2.6.0",
+         "target":"4.1.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.161.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2am-migration-4.1.0.59.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-260-to-410.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/2_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/4_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/5_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/6_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/7_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/8_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/9_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/10_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/11_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/12_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/13_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/14_PostgreSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/16_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/17_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/18_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/19_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-260-to-410/20_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"2.6.0",
+               "target":"4.1.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-570-to-is-5110-scripts/is-km-570-to-is-5110-PostgreSQL.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-570-to-is-5110-scripts/is-km-570-to-is-5110-MSSQL.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-570-to-is-5110-scripts/is-km-570-to-is-5110-MySQL.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-570-to-is-5110-scripts/is-km-570-to-is-5110-Oracle.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-570-to-is-5110-scripts/is-km-570-to-is-5110-DB2.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-5.11.0/Upgrade IS as Key Manager 5.7.0 to IS 5.11.0 for APIM 2.6.0 to 4.0.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-preparing-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-to-5110.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-userstore-managers.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/LICENSE",
-        "target-folder": ""
+         "product":"APIM",
+         "source":"3.0.0",
+         "target":"4.1.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.161.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2am-migration-4.1.0.59.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-300-to-410.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/2_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/4_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/5_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/6_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/7_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/8_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/9_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/10_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/11_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/12_MySQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/13_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/14_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/16_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/17_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/18_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/19_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-300-to-410/20_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"3.0.0",
+               "target":"4.1.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-590-to-is-5110-scripts/is-km-590-to-is-5110-PostgreSQL.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-590-to-is-5110-scripts/is-km-590-to-is-5110-MSSQL.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-590-to-is-5110-scripts/is-km-590-to-is-5110-MySQL.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-590-to-is-5110-scripts/is-km-590-to-is-5110-Oracle.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-590-to-is-5110-scripts/is-km-590-to-is-5110-DB2.sql",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-5.11.0/Upgrade IS as Key Manager 5.9.0 to IS 5.11.0 for APIM 3.0.0 to 4.1.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-preparing-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-to-5110.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-userstore-managers.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-      "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.161.zip",
-      "target-folder": "attachments"
-       },
-      {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2am-migration-4.1.0.59.zip",
-        "target-folder": "attachments"
+         "product":"APIM",
+         "source":"3.1.0",
+         "target":"4.1.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.161.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2am-migration-4.1.0.59.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-310-to-410.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/5_DB2.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/6_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/7_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/8_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/9_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/10_DB2.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/11_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/12_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/13_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/14_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"3.1.0",
+               "target":"4.1.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-520-to-5110-resources/wso2is-extensions-1.2.10.zip",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-5.11.0/Upgrade IS as Key Manager 5.10.0 to IS 5.11.0 for APIM 3.1.0 to 4.1.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-preparing-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-to-5110.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-userstore-managers.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-guidelines.md",
-        "target-folder": "migration-documents/api-manager"
+         "product":"APIM",
+         "source":"3.2.0",
+         "target":"4.1.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.161.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2am-migration-4.1.0.59.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-320-to-410.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/1_DB2.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/2_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/3_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/4_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/5_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"3.2.0",
+               "target":"4.1.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-520-to-5110-resources/wso2is-extensions-1.2.10.zip",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-5.11.0/Upgrade IS as Key Manager 5.10.0 to IS 5.11.0 for APIM 3.2.0 to 4.0.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-preparing-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-to-5110.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-userstore-managers.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-5.11.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/what-has-changed.md",
-        "target-folder": "migration-documents/api-manager"
+         "product":"APIM",
+         "source":"4.0.0",
+         "target":"4.1.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.161.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2am-migration-4.1.0.59.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-400-to-410.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/2_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/4_DB2.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/5_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/6_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/7_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-400-to-410/8_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-310-to-410.md",
-        "target-folder": "migration-documents/api-manager"
+         "product":"APIM",
+         "source":"2.6.0",
+         "target":"4.2.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/is/wso2is-migration-1.1.163.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/apim/wso2am-migration-4.2.0.42.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-from-260-to-420.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/2_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/4_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/5_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/6_MySQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/7_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/8_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/9_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/10_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/11_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-260-to-420/12_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"2.6.0",
+               "target":"4.2.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-570-to-is-600-resources/wso2is-extensions-1.4.2.zip",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-6.0.0/Upgrade IS KM 5.7.0 to IS 6.0.0 for APIM 2.6.0 to 4.2.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/prepare-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migrate-to-600.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/5_DB2.db2",
-        "target-folder": "db-scripts"
+         "product":"APIM",
+         "source":"3.0.0",
+         "target":"4.2.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/is/wso2is-migration-1.1.163.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/apim/wso2am-migration-4.2.0.42.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-from-300-to-420.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/2_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/4_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/5_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/6_MySQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/7_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/8_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/9_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/10_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/11_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-300-to-420/12_PostgreSQL.db2",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"3.0.0",
+               "target":"4.2.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-6.0.0/Upgrade IS KM 5.9.0 to IS 6.0.0 for APIM 3.0.0 to 4.2.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/prepare-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migrate-to-600.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/6_MSSQL.sql",
-        "target-folder": "db-scripts"
+         "product":"APIM",
+         "source":"3.1.0",
+         "target":"4.2.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/is/wso2is-migration-1.1.163.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/apim/wso2am-migration-4.2.0.42.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-from-310-to-420.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-420/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-420/2_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-420/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-420/4_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-420/5_MSSQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-420/6_MySQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-410/7_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-310-to-420/8_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"3.1.0",
+               "target":"4.2.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-6.0.0/Upgrade IS KM 5.10.0 to IS 6.0.0 for APIM 3.1.0 to 4.2.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/prepare-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migrate-to-600.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/7_MySQL.sql",
-        "target-folder": "db-scripts"
+         "product":"APIM",
+         "source":"3.2.0",
+         "target":"4.2.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/is/wso2is-migration-1.1.163.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/apim/wso2am-migration-4.2.0.42.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-from-320-to-420.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-320-to-420/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-320-to-420/2_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-320-to-420/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-320-to-420/4_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"3.2.0",
+               "target":"4.2.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-6.0.0/Upgrade IS or IS KM 5.10.0 to IS 6.0.0 for APIM 3.2.0 to 4.2.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/prepare-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migrate-to-600.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       },
       {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/8_Oracle.sql",
-        "target-folder": "db-scripts"
-      },
-      {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/9_PostgreSQL.sql",
-        "target-folder": "db-scripts"
-      },
-      {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/10_DB2.db2",
-        "target-folder": "db-scripts"
-      },
-      {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/11_MSSQL.sql",
-        "target-folder": "db-scripts"
-      },
-      {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/12_MySQL.sql",
-        "target-folder": "db-scripts"
-      },
-      {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/13_Oracle.sql",
-        "target-folder": "db-scripts"
-      },
-      {
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-310-to-410/14_PostgreSQL.sql",
-        "target-folder": "db-scripts"
+         "product":"APIM",
+         "source":"4.0.0",
+         "target":"4.2.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/is/wso2is-migration-1.1.163.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/apim/wso2am-migration-4.2.0.42.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-from-400-to-420.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-400-to-420/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-400-to-420/2_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-400-to-420/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-400-to-420/4_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"4.0.0",
+               "target":"4.2.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-5110-to-is-600-resources/wso2is-extensions-1.6.8.zip",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-6.0.0/Upgrade IS 5.11.0 to IS 6.0.0 for APIM 4.0.0 to 4.2.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/prepare-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migrate-to-600.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
+      }{
+         "product":"APIM",
+         "source":"4.1.0",
+         "target":"4.2.0",
+         "migration-resources":[
+            {
+               "source-path":"./migration-docs/about-migration-docs.md",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/LICENSE",
+               "target-folder":""
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/is/wso2is-migration-1.1.163.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/attachments/apim/wso2am-migration-4.2.0.42.zip",
+               "target-folder":"attachments"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-guidelines.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/what-has-changed.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-docs/apim/apim-4.2.0/apim/upgrading-from-410-to-420.md",
+               "target-folder":"migration-documents/api-manager"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-410-to-420/1_MSSQL.db2",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-410-to-420/2_MySQL.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-410-to-420/3_Oracle.sql",
+               "target-folder":"db-scripts"
+            },
+            {
+               "source-path":"./migration-docs/api-manager/migration-resources/apim-4.2.0-resources/db-scripts/upgrading-from-410-to-420/4_PostgreSQL.sql",
+               "target-folder":"db-scripts"
+            }
+         ],
+         "dependency-products":[
+            {
+               "product":"isaskm",
+               "source":"4.1.0",
+               "target":"4.2.0",
+               "migration-resources":[
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-resources/is-km-5110-to-is-600-resources/wso2is-extensions-1.6.8.zip",
+                     "target-folder":"attachments/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/api-manager/migration-docs/is-as-a-km/is-6.0.0/Upgrade IS 5.11.0 to IS 6.0.0 for APIM 4.1.0 to 4.2.0.md",
+                     "target-folder":"migration-documents/is-as-km"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migration-process.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/prepare-for-migration.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/what-has-changed.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  },
+                  {
+                     "source-path":"./migration-docs/identity-server/migration-docs/is-6.0.0/migrate-to-600.md",
+                     "target-folder":"migration-documents/is-as-km/identity-server"
+                  }
+               ]
+            }
+         ]
       }
-    ],
-
-    "dependency-products": [{
-      "product": "isaskm",
-
-      "source": "3.1.0",
-      "target": "4.1.0",
-
-      "migration-resources": [{
-        "source-path": "./migration-docs/api-manager/migration-resources/is-km-520-to-5110-resources/wso2is-extensions-1.2.10.zip",
-        "target-folder": "attachments"
-      },
-        {
-          "source-path": "./migration-docs/api-manager/migration-docs/is-as-a-km/is-5.11.0/Upgrade IS as Key Manager 5.10.0 to IS 5.11.0 for APIM 3.1.0 to 4.1.0.md",
-          "target-folder": "migration-documents/is-as-km"
-        },
-        {
-          "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-preparing-for-migration.md",
-          "target-folder": "migration-documents/is-as-km/identity-server"
-        },
-        {
-          "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-to-5110.md",
-          "target-folder": "migration-documents/is-as-km/identity-server"
-        },
-        {
-          "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-userstore-managers.md",
-          "target-folder": "migration-documents/is-as-km/identity-server"
-        },
-        {
-          "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-what-has-changed.md",
-          "target-folder": "migration-documents/is-as-km/identity-server"
-        },
-        {
-          "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migration-process.md",
-          "target-folder": "migration-documents/is-as-km/identity-server"
-        }
-      ]
-
-    }]
-  },
-    {
-      "product": "APIM",
-
-      "source": "3.2.0",
-      "target": "4.1.0",
-
-      "migration-resources": [{
-        "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2is-migration-1.0.161.zip",
-        "target-folder": "attachments"
-      },
-        {
-          "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/attachments/apim/wso2am-migration-4.1.0.59.zip",
-          "target-folder": "attachments"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-guidelines.md",
-          "target-folder": "migration-documents/api-manager"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/what-has-changed.md",
-          "target-folder": "migration-documents/api-manager"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-docs/apim/apim-4.1.0/apim/upgrading-from-320-to-410.md",
-          "target-folder": "migration-documents/api-manager"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/1_DB2.db2",
-          "target-folder": "db-scripts"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/2_MSSQL.sql",
-          "target-folder": "db-scripts"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/3_MySQL.sql",
-          "target-folder": "db-scripts"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/4_Oracle.sql",
-          "target-folder": "db-scripts"
-        },
-        {
-          "source-path": "./migration-docs/api-manager/migration-resources/apim-4.1.0-resources/db-scripts/upgrading-from-320-to-410/5_PostgreSQL.sql",
-          "target-folder": "db-scripts"
-        }
-      ],
-
-      "dependency-products": [{
-        "product": "isaskm",
-
-        "source": "3.2.0",
-        "target": "4.1.0",
-
-        "migration-resources": [{
-          "source-path": "./migration-docs/api-manager/migration-resources/is-km-520-to-5110-resources/wso2is-extensions-1.2.10.zip",
-          "target-folder": "attachments"
-        },
-          {
-            "source-path": "./migration-docs/api-manager/migration-docs/is-as-a-km/is-5.11.0/Upgrade IS as Key Manager 5.10.0 to IS 5.11.0 for APIM 3.2.0 to 4.0.0.md",
-            "target-folder": "migration-documents/is-as-km"
-          },
-          {
-            "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-preparing-for-migration.md",
-            "target-folder": "migration-documents/is-as-km/identity-server"
-          },
-          {
-            "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-to-5110.md",
-            "target-folder": "migration-documents/is-as-km/identity-server"
-          },
-          {
-            "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-userstore-managers.md",
-            "target-folder": "migration-documents/is-as-km/identity-server"
-          },
-          {
-            "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migrating-what-has-changed.md",
-            "target-folder": "migration-documents/is-as-km/identity-server"
-          },
-          {
-            "source-path": "./migration-docs/identity-server/migration-docs/is-5.11.0/migration-process.md",
-            "target-folder": "migration-documents/is-as-km/identity-server"
-          }
-        ]
-
-      }]
-    }
-
-  ]
+   ]
 }

@@ -1,6 +1,10 @@
 package org.wso2.migration.docs.config;
 
+import java.util.List;
+
 public class YAMLConfig {
+
+    private boolean enable;
     private String token;
     private String repository;
     private String directory;
@@ -10,6 +14,8 @@ public class YAMLConfig {
     private String dependency;
 
     private String product;
+
+    private List<String> attachmentPrefixes;
 
     public String getToken() {
         return token;
@@ -75,10 +81,27 @@ public class YAMLConfig {
         this.product = product;
     }
 
+    public List<String> getAttachmentPrefixes() {
+        return attachmentPrefixes;
+    }
+
+    public void setAttachmentPrefixes(List<String> attachmentPrefixes) {
+        this.attachmentPrefixes = attachmentPrefixes;
+    }
+
+    public boolean getEnable() {
+        return enable;
+    }
+
+    public void setEnable(boolean enable) {
+        this.enable = enable;
+    }
+
     @Override
     public String toString() {
         return "YAMLConfig{" +
-                "token='" + token + '\'' +
+                "enable='" + enable + '\'' +
+                ", token='" + token + '\'' +
                 ", repository='" + repository + '\'' +
                 ", directory='" + directory + '\'' +
                 ", organization='" + organization + '\'' +
@@ -86,6 +109,7 @@ public class YAMLConfig {
                 ", target='" + target + '\'' +
                 ", dependency='" + dependency + '\'' +
                 ", product='" + product + '\'' +
+                ", attachmentPrefixes=" + attachmentPrefixes +
                 '}';
     }
 }
