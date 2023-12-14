@@ -1,5 +1,5 @@
 git:
-  enable: false
+  enable: true
   username:
   token:
   repository: https://github.com/wso2-enterprise/migration-docs
