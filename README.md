@@ -1,14 +1,13 @@
 # Migration Document Sharing Tool
-___
 
 ## Prerequisites for using this project
-___
+
 
 * JAVA 8 installed.
 * Access to WSO2 migration document repository.
 
 ## Steps to use the tool
-___
+
 
 1. Clone the repository and build the JAR.
 2. Generate a GitHub personal access token.
